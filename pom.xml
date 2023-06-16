@@ -61,7 +61,7 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>
-                                com.example.kolos2k22zapierdolesie/com.example.kolos2k22zapierdolesie.HelloApplication
+                                com.example.kolos2k22zapierdolesie/com.example.kolos2k22cwicz.HelloApplication
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>

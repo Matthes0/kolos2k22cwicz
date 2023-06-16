@@ -1,13 +1,10 @@
-package com.example.kolos2k22zapierdolesie;
+package com.example.kolos2k22cwicz;
 
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.time.LocalTime;
 import java.util.*;
-import java.util.stream.Collectors;
 
 public class Server extends Thread {
     private ServerSocket serverSocket;

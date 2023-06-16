@@ -1,21 +1,17 @@
-package com.example.kolos2k22zapierdolesie;
-
+package com.example.kolos2k22cwicz;
 
 import java.io.*;
 import java.net.Socket;
 
-public class ServerThread extends Thread {
-
-    public Socket getSocket() {
-        return socket;
-    }
+public class ClientThread extends Thread {
 
     private Socket socket;
     private PrintWriter writer;
-    private HelloController helloController;
-    public ServerThread(String address, int port, HelloController helloController) throws IOException {
-        this.socket = new Socket(address, port);
-        this.helloController = helloController;
+    private Server server;
+
+    public ClientThread(Socket socket, Server server) {
+        this.socket = socket;
+        this.server = server;
     }
 
     public void run(){
@@ -26,13 +22,18 @@ public class ServerThread extends Thread {
             writer = new PrintWriter(output, true);
             String message;
             while ((message = reader.readLine()) != null) {
-                helloController.updateWordCountLabel();
-                helloController.addToWordList(message);
             }
             System.out.println("closed");
+            server.removeClient(this);
         }
         catch (IOException e) {
             e.printStackTrace();
         }
     }
+
+    public void send(String message){
+        writer.println(message);
+    }
+
 }
+

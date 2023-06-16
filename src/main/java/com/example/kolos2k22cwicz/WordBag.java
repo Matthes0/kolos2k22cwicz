@@ -1,4 +1,4 @@
-package com.example.kolos2k22zapierdolesie;
+package com.example.kolos2k22cwicz;
 
 import java.io.IOException;
 import java.nio.file.Files;

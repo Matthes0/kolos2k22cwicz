@@ -1,4 +1,4 @@
-package com.example.kolos2k22zapierdolesie;
+package com.example.kolos2k22cwicz;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

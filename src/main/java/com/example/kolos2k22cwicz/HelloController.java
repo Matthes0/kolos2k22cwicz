@@ -1,8 +1,7 @@
-package com.example.kolos2k22zapierdolesie;
+package com.example.kolos2k22cwicz;
 
 import javafx.application.Platform;
 import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;

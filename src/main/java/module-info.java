@@ -3,6 +3,6 @@ module com.example.kolos2k22zapierdolesie {
     requires javafx.fxml;
 
 
-    opens com.example.kolos2k22zapierdolesie to javafx.fxml;
-    exports com.example.kolos2k22zapierdolesie;
+    opens com.example.kolos2k22cwicz to javafx.fxml;
+    exports com.example.kolos2k22cwicz;
 }
